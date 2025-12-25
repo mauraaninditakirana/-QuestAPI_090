@@ -1,5 +1,6 @@
 package com.example.praktikumlocalrestapi.view
 
+
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -39,8 +40,8 @@ import com.example.praktikumlocalrestapi.R
 import com.example.praktikumlocalrestapi.modeldata.DataSiswa
 import com.example.praktikumlocalrestapi.uicontroller.route.DestinasiHome
 import com.example.praktikumlocalrestapi.viewmodel.HomeViewModel
-import com.example.praktikumlocalrestapi.viewmodel.provider.PenyediaViewModel
 import com.example.praktikumlocalrestapi.viewmodel.StatusUiSiswa
+import com.example.praktikumlocalrestapi.viewmodel.provider.PenyediaViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -97,11 +98,10 @@ fun HomeBody(
     ) {
         when (statusUiSiswa) {
             is StatusUiSiswa.Loading -> LoadingScreen()
-            is StatusUiSiswa.Success ->
-                DaftarSiswa(
-                    dataSiswa = statusUiSiswa.listSiswa,
-                    onSiswaClick = onSiswaClick
-                )
+            is StatusUiSiswa.Success -> DaftarSiswa(
+                listSiswa = statusUiSiswa.siswa,
+                onSiswaClick = onSiswaClick
+            )
             is StatusUiSiswa.Error -> ErrorScreen(retryAction)
         }
     }
@@ -126,21 +126,24 @@ fun ErrorScreen(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = stringResource(R.string.gagal))
+        Text(
+            text = stringResource(R.string.gagal),
+            modifier = Modifier.padding(16.dp)
+        )
         Button(onClick = retryAction) {
-            Text(stringResource(R.string.retry))
+            Text(text = stringResource(R.string.retry))
         }
     }
 }
 
 @Composable
 fun DaftarSiswa(
-    dataSiswa: List<DataSiswa>,
+    listSiswa: List<DataSiswa>,
     onSiswaClick: (Int) -> Unit,
     modifier: Modifier = Modifier
 ) {
     LazyColumn(modifier = modifier) {
-        items(items = dataSiswa, key = { it.id }) { person ->
+        items(items = listSiswa, key = { it.id }) { person ->
             ItemSiswa(
                 siswa = person,
                 modifier = Modifier
