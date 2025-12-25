@@ -25,3 +25,21 @@ Detail
 
 <img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/2cd99ae2-532e-471f-aa57-b6d9074e01b0" />
 
+Hapus
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/ada8232a-f52f-47af-bb77-81a6e1eb7c6f" />
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/d5967344-14c1-45b2-8c8e-13f8dc1db8a5" />
+
+
+Tambah
+
+<img width="959" height="537" alt="image" src="https://github.com/user-attachments/assets/13a6308b-9c0e-497f-ae57-9dbaf2fb498b" />
+
+Edit
+
+<img width="958" height="539" alt="image" src="https://github.com/user-attachments/assets/98517d68-6c1f-4807-a819-9140c9f4dbc6" />
+<img width="959" height="536" alt="image" src="https://github.com/user-attachments/assets/45f1d0ca-8deb-4c03-bf75-a086169ea650" />
+
+
+
+
