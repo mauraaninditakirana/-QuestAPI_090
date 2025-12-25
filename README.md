@@ -15,3 +15,13 @@ Data Masuk Di Database
 <img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/a58b1a8f-1b96-46a5-ace4-8eb187f2fb9b" />
 
 
+Activity 10 - Local Rest API 2
+
+Home
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/4cd4f953-4e78-4846-9b8f-1fd1533f80b9" />
+
+Detail
+
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/2cd99ae2-532e-471f-aa57-b6d9074e01b0" />
+
